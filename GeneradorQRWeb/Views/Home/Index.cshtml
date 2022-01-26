@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Generador QR</h1>
+
+   <form  method="get" asp-action="Qr"  asp-controller="Home" class="form-inline">
+  <div class="form-group mb-2">
+    <label for="name" class="sr-only">Texto</label>
+    <input type="text" class="form-control-plaintext" id="texto" name="texto" placeholder="Ingresa el texto">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary mb-2">Generar QR</button>
+</form>
+</div>
